@@ -1,22 +1,25 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <div class="custom-card window-width" v-for="item in cardList">
+    <div class="custom-card window-width" :class="$q.screen.gt.sm ? 'custom-grid' : ''"  v-for="item in cardList" :key="item.title">
       <q-img :src="item.imageURL">
         <div class="absolute-bottom text-subtitle1 text-center">
           {{item.title}}
         </div>
       </q-img>
-      <p>{{ item.text }}</p>
+      <p class="q-pa-sm text-body1">{{ item.text }}</p>
     </div>
   </q-page>
 </template>
 
 <script setup lang="ts">
+import { useQuasar } from 'quasar'
 import imgRepair from '../images/service.jpg'
 import imgServer from '../images/server.jpg'
 import imgSupport from '../images/support.jpg'
 import imgShop from '../images/shop.jpg'
 import imgCustom from '../images/customPC.jpg'
+
+const $q = useQuasar()
 
 const cardList = [
   {
@@ -49,4 +52,24 @@ const cardList = [
 
 </script>
 
-<style scss></style>
+<style lang="scss">
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 1rem;
+  align-items: center;
+}
+
+.custom-grid:nth-child(odd) {
+
+  
+  .q-img {
+    grid-column: 2;
+  }
+  p {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+</style>
