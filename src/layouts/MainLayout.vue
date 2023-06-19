@@ -8,17 +8,17 @@
           <q-avatar>
             <q-icon name="construction" size="md"/>
           </q-avatar>
-          BluebearService
+          <span class="text-accent text-bold">Bluebear</span>Service
         </q-toolbar-title>
 
         <q-btn dense flat icon="menu" @click="toggleRightDrawer" size="lg" v-if="$q.screen.lt.sm"/>
       </q-toolbar>
 
-      <MenuDrawer v-if="$q.screen.gt.xs" />
+      <MenuDrawer v-if="$q.screen.gt.xs" :is-vertical="false" />
     </q-header>
 
-    <q-drawer v-model="rightDrawerOpen" side="right" overlay bordered>
-      <MenuDrawer />
+    <q-drawer v-model="rightDrawerOpen" side="right" overlay bordered v-if="$q.screen.lt.sm">
+      <MenuDrawer :is-vertical="true" />
     </q-drawer>
 
     <q-page-container>
