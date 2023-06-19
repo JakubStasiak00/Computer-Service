@@ -25,7 +25,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer reveal class="bg-grey-8 text-white">
+    <q-footer class="bg-grey-8 text-white">
       <q-toolbar>
         Copyright placeholder
       </q-toolbar>
