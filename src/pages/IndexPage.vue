@@ -1,12 +1,21 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <div class="custom-card window-width" :class="$q.screen.gt.sm ? 'custom-grid' : ''"  v-for="item in cardList" :key="item.title">
+    <div class="home-banner window-width window-height" style="overflow: hidden;">
+      <q-img :src="imgBanner" class="window-height" fit="cover">
+        <div class="overlay"></div>
+        <h1 class="absolute-center q-mt-none window-width text-h3 text-bold text-blue-5 text-center q-px-xl" style="max-width: 700px;">
+          Professional PC Repair and Shop Services for All Your Computing Needs
+        </h1>
+      </q-img>
+    </div>
+    <div class="custom-card window-width" :class="$q.screen.gt.sm ? 'custom-grid' : ''" v-for="item in cardList"
+      :key="item.title">
       <q-img :src="item.imageURL">
         <div class="absolute-bottom text-subtitle1 text-center">
-          {{item.title}}
+          {{ item.title }}
         </div>
       </q-img>
-      <p class="q-pa-sm text-body1">{{ item.text }}</p>
+      <p class="custom-text q-pa-xl text-center text-bold">{{ item.text }}</p>
     </div>
   </q-page>
 </template>
@@ -18,6 +27,7 @@ import imgServer from '../images/server.jpg'
 import imgSupport from '../images/support.jpg'
 import imgShop from '../images/shop.jpg'
 import imgCustom from '../images/customPC.jpg'
+import imgBanner from '../images/banner.jpg'
 
 const $q = useQuasar()
 
@@ -53,23 +63,34 @@ const cardList = [
 </script>
 
 <style lang="scss">
-
 .custom-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-block: 1rem;
   align-items: center;
 }
 
 .custom-grid:nth-child(odd) {
 
-  
+
   .q-img {
     grid-column: 2;
   }
+
   p {
     grid-column: 1;
     grid-row: 1;
   }
+}
+
+.custom-text {
+  font-size: clamp(0.9rem, calc(0.3rem + 1vw), 1.5rem);
+}
+
+.overlay {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

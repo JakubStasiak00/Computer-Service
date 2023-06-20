@@ -1,6 +1,6 @@
 <template>
     <q-tabs align="justify" :vertical="isVertical">
-            <q-route-tab to="/" label="Home" icon="home" size="sm" />
+            <q-route-tab to="/" label="Home" icon="home" />
             <q-route-tab to="/repairs" label="Repairs" icon="build" />
             <q-route-tab to="/shop" label="Shop" icon="shop" />
             <q-route-tab to="/about" label="About Us" icon="groups" />
