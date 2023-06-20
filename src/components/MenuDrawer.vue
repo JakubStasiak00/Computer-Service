@@ -1,5 +1,5 @@
 <template>
-    <q-tabs align="justify"  :vertical="isVertical" :class="isVertical ? 'custom-center' : ''">
+    <q-tabs align="justify"  :vertical="isVertical" :class="isVertical ? 'custom-center' : ''" inline-label>
             <q-route-tab to="/" label="Home" icon="home" />
             <q-route-tab to="/repairs" label="Repairs" icon="build" />
             <q-route-tab to="/shop" label="Shop" icon="shop" />
@@ -23,5 +23,10 @@ defineProps<{
     .custom-center {
         top: 50%;
         transform: translateY(-25%);
+    }
+
+    .q-tab__content {
+        padding: 0;
+        margin: 0;
     }
 </style>

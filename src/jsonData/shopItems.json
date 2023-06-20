@@ -1,0 +1,132 @@
+[
+    {
+        "id": "1",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 4,
+        "price": 349
+    },
+    {
+        "id": "2",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 5,
+        "price": 519
+    },
+    {
+        "id": "3",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 3,
+        "price": 199
+    },
+    {
+        "id": "4",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 4,
+        "price": 349
+    },
+    {
+        "id": "5",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 3,
+        "price": 199
+    },
+    {
+        "id": "6",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 5,
+        "price": 519
+    },
+    {
+        "id": "7",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 4,
+        "price": 349
+    },
+    {
+        "id": "8",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 5,
+        "price": 519
+    },
+    {
+        "id": "9",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 3,
+        "price": 199
+    },
+    {
+        "id": "10",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 4,
+        "price": 349
+    },
+    {
+        "id": "11",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 5,
+        "price": 519
+    },
+    {
+        "id": "12",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 3,
+        "price": 199
+    },
+    {
+        "id": "13",
+        "name": "Lorem ipsum dolor sit amet",
+        "system": "Lorem 10",
+        "processor": "Loremium Ipsum 9",
+        "gpu": "Loridia Iporce 210",
+        "ram": "16",
+        "rating": 4,
+        "price": 349
+    }
+]
