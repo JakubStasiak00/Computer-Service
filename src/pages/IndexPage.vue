@@ -3,7 +3,7 @@
     <div class="home-banner window-width window-height" style="overflow: hidden;">
       <q-img :src="imgBanner" class="window-height" fit="cover">
         <div class="overlay"></div>
-        <h1 class="absolute-center q-mt-none window-width text-h3 text-bold text-blue-5 text-center q-px-xl" style="max-width: 700px;">
+        <h1 class="absolute-center q-mt-none window-width text-h3 text-bold text-blue-4 text-center q-px-xl" style="max-width: 700px;">
           Professional PC Repair and Shop Services for All Your Computing Needs
         </h1>
       </q-img>
@@ -15,7 +15,7 @@
           {{ item.title }}
         </div>
       </q-img>
-      <p class="custom-text q-pa-xl text-center text-bold">{{ item.text }}</p>
+      <p class="custom-text q-pa-md text-center text-bold">{{ item.text }}</p>
     </div>
   </q-page>
 </template>
