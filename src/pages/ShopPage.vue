@@ -5,16 +5,16 @@
             <q-img src="../images/dummy-pc.webp" v-if="product.rating === 5" />
             <q-img src="../images/dummy-mid.webp" v-else-if="product.rating === 4" />
             <q-img src="../images/dummy-worse.webp" v-else />
-            <div class="text-h6"> 
+            <div class="text-h5 text-bold"> 
                 {{ product.name }}
             </div>
-            <div>
-                <span class="text-subtitle1">Performance Score:</span><q-rating class="q-pa-md" v-model="product.rating" max="5" size="sm" icon="build" readonly color="accent" />
+            <div class="flex items-center">
+                <span class="text-subtitle1 text-bold">Performance Score:</span><q-rating class="q-pa-md" v-model="product.rating" max="5" size="sm" icon="build" readonly color="accent" />
             </div>
-            <div>System: {{ product.system }} </div>
-            <div>Processor: {{ product.processor }} </div>
-            <div>GPU: {{ product.gpu }} </div>
-            <div>RAM: {{ product.ram }} </div>
+            <div><span class="text-bold">System:</span> {{ product.system }} </div>
+            <div><span class="text-bold">Processor:</span> {{ product.processor }} </div>
+            <div><span class="text-bold">GPU:</span> {{ product.gpu }} </div>
+            <div><span class="text-bold">RAM:</span> {{ product.ram }} </div>
             <div class="text-right text-h6 text-bold">{{ product.price }} &#36</div>
         </q-card>
     </div>
