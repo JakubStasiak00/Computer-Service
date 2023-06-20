@@ -5,10 +5,7 @@
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar :class="$q.screen.lt.sm ? 'q-px-xs' : 'q-px-md'">
         <q-toolbar-title class="flex items-center text-h5">
-          <q-avatar>
-            <q-icon name="construction" size="md"/>
-          </q-avatar>
-          <span class="text-accent text-bold">Bluebear</span>Service
+            <q-img src="../images/logo.png" width="200px" style="mix-blend-mode: luminosity; border-radius: 15px;" />
         </q-toolbar-title>
 
         <q-btn dense flat icon="menu" @click="toggleRightDrawer" size="lg" v-if="$q.screen.lt.sm"/>
