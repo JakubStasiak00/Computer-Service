@@ -5,7 +5,7 @@
             <q-img src="../images/dummy-pc.webp" v-if="product.rating === 5" />
             <q-img src="../images/dummy-mid.webp" v-else-if="product.rating === 4" />
             <q-img src="../images/dummy-worse.webp" v-else />
-            <div class="text-h5 text-bold"> 
+            <div class="text-h5 text-bold" style="max-width: 300px;"> 
                 {{ product.name }}
             </div>
             <div class="flex items-center">
