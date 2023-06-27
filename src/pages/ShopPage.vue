@@ -1,8 +1,13 @@
 <template>
-    <h2 class="q-mx-auto q-px-lg text-h4 text-center text-bold" style="max-width: 1100px;"> Please explore our impressive range of state-of-the-art personal computers, showcasing the latest advancements in technology. We offer the convenience of allowing you to preview these exceptional products before making your in-store purchase. </h2>
+    <h2 class="text-center text-h4 text-bold text-primary">Explore our shops' amazing assortiment</h2>
+    <div class="flex justify-around" :class="$q.screen.lt.sm ? 'wrap' : 'no-wrap'">
+        <q-input outlined class="q-pa-md" v-model="name" label="Search By Name" style="min-width: 300px; width: 100%;" />
+        <q-select outlined v-model="sortBy" :options="options" label="Sort By" class="q-pa-md" style="min-width: 300px; width: 100%;" />
+    </div>
+
     <div class="row justify-evenly q-ma-md q-gutter-md">
         <q-card v-for="product in products" :key="product.id" class="q-pa-md">
-            <div class="text-h5 text-bold" style="max-width: 300px; min-height:95px;"> 
+            <div class="text-h5 text-bold" style="max-width: 300px; min-height:95px;">
                 {{ product.name }}
             </div>
 
@@ -11,7 +16,8 @@
             <q-img src="../images/dummy-worse.webp" v-else />
 
             <div class="flex items-center">
-                <span class="text-subtitle1 text-bold">Performance Score:</span><q-rating class="q-pa-md" v-model="product.rating" max="5" size="sm" icon="build" readonly color="accent" />
+                <span class="text-subtitle1 text-bold">Performance Score:</span><q-rating class="q-pa-md"
+                    v-model="product.rating" max="5" size="sm" icon="build" readonly color="accent" />
             </div>
             <div><span class="text-bold">System:</span> {{ product.system }} </div>
             <div><span class="text-bold">Processor:</span> {{ product.processor }} </div>
@@ -23,9 +29,14 @@
 </template>
 
 <script setup lang="ts">
-    import shopData from '../jsonData/shopItems.json'
-    import { ref } from 'vue';
+import shopData from '../jsonData/shopItems.json'
+import { ref } from 'vue';
+import { useQuasar } from 'quasar';
 
-    const products = ref([...shopData])
+const $q = useQuasar()
+const products = ref([...shopData])
+const sortBy = ref(null)
+const options = ['score', 'price', 'name']
+const name = ref('')
 
 </script>
